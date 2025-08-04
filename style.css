@@ -1,57 +1,20 @@
-/* Fundo escuro */
-body {
-  background-color: #0d0d0d;
-  color: #ffffff;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-/* Container principal */
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 90%;
-  max-width: 1200px;
-  padding: 20px;
-  gap: 40px;
-}
-
-/* Lado esquerdo: título, subtítulo e outros */
-.left-content {
-  flex: 1;
-}
-
-/* Lado direito: vídeo */
-.right-content {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.right-content iframe {
-  width: 100%;
-  max-width: 560px;
-  height: 315px;
-  border: none;
-  border-radius: 8px;
-}
-
-/* Título e subtítulo */
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #00e5ff;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: normal;
-  color: #cccccc;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Vídeos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-content">
+      <h1>Meus Vídeos</h1>
+      <h2>Subtítulo ou descrição</h2>
+      <!-- Mais conteúdo seu aqui -->
+    </div>
+    <div class="right-content">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
