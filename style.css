@@ -6,24 +6,42 @@ body {
   padding: 0;
 }
 
-section.banner {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 40px;
-  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-section.banner .banner__info {
+.left-content {
   flex: 1;
-  text-align: left;
+  padding-right: 20px;
 }
 
-section.banner iframe {
+.right-content {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-content iframe {
+  width: 100%;
   max-width: 560px;
   height: 315px;
-  border-radius: 8px;
   border: none;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #cccccc;
 }
